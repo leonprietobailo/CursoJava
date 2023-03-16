@@ -5,5 +5,7 @@ interface Operacionesaritmeticas {
   int pedirNumero();
 
   String pedirOperador();
+  
+  //HOLA
 
 }

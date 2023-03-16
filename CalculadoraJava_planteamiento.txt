@@ -1,0 +1,26 @@
+Desarrollar una calculadora en Java que pida dos valores por consola y te permita elegir de un menu las siguientes operaciones:
+- Suma
+- Resta
+- Division
+- Multiplicacion
+En el caso de la division, no se puede dividir por 0, el programa debe manejar esta situación en la estructura del codigo pidiendo al usuario que vuelva a ingresar numeros validos si se elige la division. 
+Subir el proyecto a un repositorio publico de Github y enviar el link del mismo para la corrección del proyecto
+
+
+// Solicitar v1,v2 por consola
+// Solicitar tipo de operación (+,-,x,/)
+
+case operacion:
+	+)
+		res = v1 + v2;
+	-)
+		res = v1 - v2;
+	x)
+		res = v1 * v2;
+	/)
+		while v2 == 0 
+			// Alerta: No se puede dividir por 0
+			// Solicitar v2 por consola 
+		res = v1 / v2;
+	default)
+		// El tipo de operacion no es valido

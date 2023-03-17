@@ -1,0 +1,4 @@
+NOMBRE APELLIDO LOCALIDAD POSICION SUELDO
+Leon Prieto Ribes Junior 20000
+Albert Rincon Bcn Becario 20001
+Josep Pieres Menorca Comercial 20002

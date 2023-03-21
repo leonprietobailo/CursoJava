@@ -44,7 +44,7 @@ public class main {
         break;
       case 5:
         System.out.println("Voy a contarle un chiste para que deje de aburrirse!: ");
-        chiste = chistes[(int) (Math.random() * 2)];
+        chiste = chistes[(int) (Math.random() * 3)];
         System.out.println(chiste);
         break;
       case 6:

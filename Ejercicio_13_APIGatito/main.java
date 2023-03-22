@@ -14,6 +14,7 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.WindowConstants;
 
+import org.json.JSONArray;
 import org.json.JSONObject;
 
 public class main {
@@ -36,9 +37,8 @@ public class main {
 					informacion.append(sc.nextLine());
 				}
 				sc.close();
-				informacion.replace(0, 1, "");
-				informacion.replace(informacion.capacity()-2, informacion.capacity()-1, "");
-				p.setJSON(informacion.toString());
+				JSONArray objeto = new JSONArray(informacion.toString());
+				p.setJSON(objeto.getJSONObject(0).toString());
 				URL urlImg = new URL((String) p.getObjectHashMap("url"));
 				Image image = ImageIO.read(urlImg);
 				ImageIcon imageIcon = new ImageIcon(image);
@@ -71,10 +71,9 @@ public class main {
 
 		public void setJSON(String response) {
 			jObject = new JSONObject(response);
-			hm.put("url", (String) (jObject.getString("url")));
+			hm.put("url", (jObject.getString("url")));
 			hm.put("width", (jObject.getInt("width")));
 			hm.put("height", (jObject.getInt("height")));
 		}
 	}
-
 }

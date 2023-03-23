@@ -1,8 +1,8 @@
 Lanzada por el usuario León Enrique Prieto Bailo
-Obtained Ejercicio_15_GithubJenkins/main from git https://github.com/leonprietobailo/CursoJava
+Obtained Ejercicio_16_GithubJenkins_Leer/main from git https://github.com/leonprietobailo/CursoJava
 [Pipeline] Start of Pipeline
 [Pipeline] node
-Running on Jenkins  in C:\ProgramData\Jenkins\.jenkins\workspace\Pipeline con Github
+Running on Jenkins  in C:\ProgramData\Jenkins\.jenkins\workspace\Leer Archivo Github
 [Pipeline] {
 [Pipeline] stage
 [Pipeline] { (Declarative: Checkout SCM)
@@ -10,9 +10,9 @@ Running on Jenkins  in C:\ProgramData\Jenkins\.jenkins\workspace\Pipeline con Gi
 Selected Git installation does not exist. Using Default
 The recommended git tool is: NONE
 using credential GithubJenkins
- > git.exe rev-parse --resolve-git-dir C:\ProgramData\Jenkins\.jenkins\workspace\Pipeline con Github\.git # timeout=10
-Fetching changes from the remote Git repository
- > git.exe config remote.origin.url https://github.com/leonprietobailo/CursoJava # timeout=10
+Cloning the remote Git repository
+Cloning repository https://github.com/leonprietobailo/CursoJava
+ > git.exe init C:\ProgramData\Jenkins\.jenkins\workspace\Leer Archivo Github # timeout=10
 Fetching upstream changes from https://github.com/leonprietobailo/CursoJava
  > git.exe --version # timeout=10
  > git --version # 'git version 2.39.2.windows.1'
@@ -20,12 +20,15 @@ using GIT_SSH to set credentials
 Verifying host key using known hosts file
 You're using 'Known hosts file' strategy to verify ssh host keys, but your known_hosts file does not exist, please go to 'Manage Jenkins' -> 'Configure Global Security' -> 'Git Host Key Verification Configuration' and configure host key verification.
  > git.exe fetch --tags --force --progress -- https://github.com/leonprietobailo/CursoJava +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git.exe config remote.origin.url https://github.com/leonprietobailo/CursoJava # timeout=10
+ > git.exe config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+Avoid second fetch
  > git.exe rev-parse "refs/remotes/origin/main^{commit}" # timeout=10
-Checking out Revision 9893135d2fc0a8a741e7d0206e5fd2aa0e0eed95 (refs/remotes/origin/main)
+Checking out Revision 922f8c328a9f84ddc9889374d95bf03986e8022d (refs/remotes/origin/main)
  > git.exe config core.sparsecheckout # timeout=10
- > git.exe checkout -f 9893135d2fc0a8a741e7d0206e5fd2aa0e0eed95 # timeout=10
-Commit message: "Bugfix: Sovled bug where the output was generating a "null" headline."
- > git.exe rev-list --no-walk 8350bfbcb4a8a0763b5b2877b3d886598557cef6 # timeout=10
+ > git.exe checkout -f 922f8c328a9f84ddc9889374d95bf03986e8022d # timeout=10
+Commit message: "Añadido Ejercicio_16: Leer archivos con Jenkins + Github"
+First time build. Skipping changelog.
 [Pipeline] }
 [Pipeline] // stage
 [Pipeline] withEnv
@@ -34,7 +37,15 @@ Commit message: "Bugfix: Sovled bug where the output was generating a "null" hea
 [Pipeline] { (Paso 1)
 [Pipeline] script
 [Pipeline] {
-[Pipeline] writeFile
+[Pipeline] readFile
+[Pipeline] echo
+El primer valor es: 24
+El segundo valor es: 27
+La suma de los valores es: 51
+La resta de los valores es: -3
+La multiplicaciÃ³n de los valores es: 648
+La divisiÃ³n de los valores es: 0.8888888889
+
 [Pipeline] }
 [Pipeline] // script
 [Pipeline] }

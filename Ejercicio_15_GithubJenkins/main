@@ -19,6 +19,8 @@ pipeline{
                     contenido += 'La resta de los valores es: ' + (n1-n2) + '\n'
                     contenido += 'La multiplicación de los valores es: ' + (n1*n2) + '\n'
                     contenido += 'La división de los valores es: ' + (n1/n2) + '\n'
+					
+					writeFile(file: "salida.txt", text: contenido)
                     
                 }
             }

@@ -20,7 +20,7 @@ pipeline{
                     contenido += 'La multiplicación de los valores es: ' + (n1*n2) + '\n'
                     contenido += 'La división de los valores es: ' + (n1/n2) + '\n'
 					
-					writeFile(file: "salida.txt", text: contenido)
+					writeFile(file: "C:\\Users\\leprieto\\Documents\\Curso Java\\CursoJava\\Ejercicio_15_GithubJenkins\\salida.txt", text: contenido)
                     
                 }
             }

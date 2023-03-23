@@ -1,6 +1,0 @@
-El primer valor es: 24
-El segundo valor es: 27
-La suma de los valores es: 51
-La resta de los valores es: -3
-La multiplicación de los valores es: 648
-La división de los valores es: 0.8888888889

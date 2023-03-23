@@ -1,0 +1,19 @@
+pipeline{
+    agent any
+    stages
+    {
+        stage("Paso 1")
+        {
+            steps
+            {
+                script 
+                {
+					
+					def data = readFile(file: "C:\\Users\\leprieto\\Documents\\Curso Java\\CursoJava\\Ejercicio_16_GithubJenkins_Leer\\salida.txt")
+                    println data
+                    
+                }
+            }
+        }
+    }
+}

@@ -10,7 +10,7 @@ pipeline{
                 {
                     def n1 = 24
                     def n2 = 27
-                    def contenido;
+                    def contenido = "";
 					
                     contenido += 'El primer valor es: ' + n1 + '\n'
                     contenido += 'El segundo valor es: ' + n2 + '\n'

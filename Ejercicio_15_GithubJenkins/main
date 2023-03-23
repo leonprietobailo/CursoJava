@@ -1,0 +1,27 @@
+pipeline{
+    agent any
+    stages
+    {
+        stage("Paso 1")
+        {
+            steps
+            {
+                script 
+                {
+                    def n1 = 24
+                    def n2 = 27
+                    def contenido;
+					
+                    contenido += 'El primer valor es: ' + n1 + '\n'
+                    contenido += 'El segundo valor es: ' + n2 + '\n'
+                    
+                    contenido += 'La suma de los valores es: ' + (n1+n2) + '\n'
+                    contenido += 'La resta de los valores es: ' + (n1-n2) + '\n'
+                    contenido += 'La multiplicación de los valores es: ' + (n1*n2) + '\n'
+                    contenido += 'La división de los valores es: ' + (n1/n2) + '\n'
+                    
+                }
+            }
+        }
+    }
+}

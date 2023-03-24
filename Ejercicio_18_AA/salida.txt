@@ -1,0 +1,9 @@
+NOMBRE | Fecha Nacimiento | Antiguedad | Segmento | Status | Edad
+Gustavo 1991-06-04 0 Affiliate Activos 31
+Carlos 1999-05-05 2 Standard User Activos 23
+Alba 1994-02-04 0 Affiliate Activos 29
+Adrian 1998-06-06 1 Standard User Activos 24
+Alvaro 1996-03-05 2 Standard User Activos 27
+Daniel 2003-05-05 1 Standard User Activos 19
+Alejandro 1997-04-06 1 Standard User Activos 25
+Ivan 1998-06-06 1 Standard User Activos 24

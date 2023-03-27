@@ -1,0 +1,3 @@
+NOMBRE | APELLIDO | EDAD
+León Prieto 22
+Pedro Miguel 30

@@ -19,7 +19,7 @@ public class main {
 		emp.add(e1);
 		emp.add(e2);
 		w.añadirLista(emp);
-		w.genArchivo();
+		w.generaTxt();
 		
 		
 

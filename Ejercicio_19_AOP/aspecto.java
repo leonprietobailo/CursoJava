@@ -12,13 +12,13 @@ import org.aspectj.lang.annotation.After;
 @Component
 public class aspecto {
 	
-	@Before("execution(void genArchivo())")
+	@Before("execution(void generaTxt())")
 	public void escribir_before()
 	{
 		System.out.println("Escribiendo archivo...");
 	}
 	
-	@After("execution(void genArchivo())")
+	@After("execution(void generaTxt())")
 	public void escribir_after() {
 		System.out.println("Ha terminado el programa! Saliendo... ");
 	}

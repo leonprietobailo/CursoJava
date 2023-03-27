@@ -17,7 +17,7 @@ public class writetxt {
 		this.eList = eList;
 	}
 	
-	public void genArchivo() {
+	public void generaTxt() {
 		try {
 			String contenido = "NOMBRE | APELLIDO | EDAD\n";
 			for(empleado emp: this.eList) {

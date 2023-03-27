@@ -15,12 +15,12 @@ public class aspecto {
 	@Before("execution(void generaTxt())")
 	public void escribir_before()
 	{
-		System.out.println("Escribiendo archivo...");
+		System.out.println("Se está generando un fichero");
 	}
 	
 	@After("execution(void generaTxt())")
-	public void escribir_after() {
-		System.out.println("Ha terminado el programa! Saliendo... ");
+	public void cierraPrograma() {
+		System.out.println("Se está cerrando el programa");
 	}
 
 }

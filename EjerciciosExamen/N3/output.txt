@@ -1,0 +1,27 @@
+Ganancias agrupadas por año:
+2009.0	2.92370611E9
+2012.0	1.5205385E9
+2015.0	3.74284749E9
+2018.0	2.05241498E9
+2019.0	4.4625147E9
+2021.0	1.92184717E9
+2022.0	2.30966016E9
+
+El TOP 3 de peliculas con mas recaudación es:
+Avatar
+Avengers: Endgame
+Avatar: The Way of Water
+
+El año que mas dinero se recaudó fue el año: 2019.0
+
+La lista de películas ordenadas alfabeticamente es: 
+Avatar
+Avatar: The Way of Water
+Avengers: Endgame
+Avengers: Infinity War
+Jurassic World
+Spider-Man: No Way Home
+Star Wars: Episode VII - The Force Awakens
+The Avengers
+The Lion King
+Titanic
